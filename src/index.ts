@@ -32,3 +32,13 @@ function getInfo(name: string,age: number,id?: number) :string{
     return ``
 }
 console.log(getInfo("mmohamed",20))
+
+// rest parameters
+function calu(...nums:number[]):number{
+    let result:number=0
+    for(let i=0;i<nums.length;i++){
+        result += nums[i];
+    }
+    return result
+}
+console.log(calu(1,2,4),"hi")
