@@ -42,3 +42,23 @@ function calu(...nums:number[]):number{
     return result
 }
 console.log(calu(1,2,4),"hi")
+
+// type alias like struct c++
+type st=string;
+let nn:st="mostafa"
+console.log(nn)
+// type alias like struct c++
+
+
+
+// custom type
+type multible=-1|0|1
+
+function allofall():multible{
+    return 0
+}
+
+// tuple
+let tbl :readonly [number,string,boolean]=[12,"mohamed",false]
+tbl.push(50)
+console.log(tbl)
